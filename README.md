@@ -1,2 +1,2 @@
-# aps-ufca
+# Análise e Projeto de Sistemas - UFCA
  
