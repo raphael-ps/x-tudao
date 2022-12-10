@@ -48,15 +48,6 @@ public abstract class Heap{
 		this.subir(this.tamanho);
 	}
 	
-	public void mostrarVetorPrioridades() {
-		System.out.print("[");
-		for (int i = 1; i <= this.tamanho; i++) {
-			Dado aux = this.dados.get(i);
-			System.out.printf("%d%s", aux.getPrioridade(), (i == this.tamanho) ? "" : ", ");
-		}
-		System.out.println("]");
-	}
-	
 	public int setPrioridade(int index, int novaPrioridade) {
 		Dado aux = this.dados.get(index);
 		int antigaPrioridade = aux.getPrioridade();
