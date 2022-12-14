@@ -86,4 +86,18 @@ public class HashingTable {
 		return null;
 	}
 	
+	public void mostrarTabelaHash() {
+		
+		for(int i = 0; i < this.dados.length; i++) {
+			System.out.printf("[%-3d ] ---> ", i);
+			
+			if (this.dados[i] != null) {
+				
+				for (Dado dado : this.dados[i]) {
+					System.out.printf("[Chave %-6d]-> ", dado.getChave());
+				}
+			}	
+			System.out.println("null");
+		}
+	}
 }
